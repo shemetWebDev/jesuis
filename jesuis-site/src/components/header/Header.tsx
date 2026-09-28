@@ -34,42 +34,45 @@ export default function Header() {
     pathname === href || pathname.startsWith(`${href}/`);
 
   return (
-    <header id="header" className={baseClassName}>
-      <div className={clsx("container", `${baseClassName}__inner`)}>
-        <Link href="/" className={`${baseClassName}__logo`} onClick={close}>
-          <span className={`${baseClassName}__logo-mark`}>JE SUIS</span>
-          <span className={`${baseClassName}__logo-name`}>{tBrand("name")}</span>
-        </Link>
+    <>
+      <header id="header" className={baseClassName}>
+        <div className={clsx("container", `${baseClassName}__inner`)}>
+          <Link href="/" className={`${baseClassName}__logo`} onClick={close}>
+            <span className={`${baseClassName}__logo-mark`}>JE SUIS</span>
+            <span className={`${baseClassName}__logo-name`}>{tBrand("name")}</span>
+          </Link>
 
-        <nav className={`${baseClassName}__nav`} aria-label="Primary">
-          {mainNav.map(({ key, href }) => (
-            <Link
-              key={key}
-              href={href}
-              className={clsx(
-                `${baseClassName}__link`,
-                isActive(href) && `${baseClassName}__link--active`,
-              )}
-              aria-current={isActive(href) ? "page" : undefined}
-            >
-              {t(key)}
-            </Link>
-          ))}
-          <LanguageSwitcher />
-        </nav>
+          <nav className={`${baseClassName}__nav`} aria-label="Primary">
+            {mainNav.map(({ key, href }) => (
+              <Link
+                key={key}
+                href={href}
+                className={clsx(
+                  `${baseClassName}__link`,
+                  isActive(href) && `${baseClassName}__link--active`,
+                )}
+                aria-current={isActive(href) ? "page" : undefined}
+              >
+                {t(key)}
+              </Link>
+            ))}
+            <LanguageSwitcher />
+          </nav>
 
-        <button
-          type="button"
-          className={`${baseClassName}__burger`}
-          aria-label={open ? t("closeMenu") : t("openMenu")}
-          aria-expanded={open}
-          onClick={() => setOpen((v) => !v)}
-        >
-          <span />
-          <span />
-        </button>
-      </div>
+          <button
+            type="button"
+            className={`${baseClassName}__burger`}
+            aria-label={open ? t("closeMenu") : t("openMenu")}
+            aria-expanded={open}
+            onClick={() => setOpen((v) => !v)}
+          >
+            <span />
+            <span />
+          </button>
+        </div>
+      </header>
 
+      {/* Меню вне <header>: backdrop-filter шапки ломает position: fixed у потомков */}
       <div
         className={clsx(`${baseClassName}__drawer`, open && `${baseClassName}__drawer--open`)}
         aria-hidden={!open}
@@ -92,6 +95,6 @@ export default function Header() {
         </nav>
         <LanguageSwitcher />
       </div>
-    </header>
+    </>
   );
 }
