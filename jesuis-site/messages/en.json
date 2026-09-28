@@ -1,0 +1,157 @@
+{
+  "meta": {
+    "title": "JE SUIS — Narina's author space",
+    "description": "Books, games, guides and learning projects about life, change and self-expression. About a woman who chooses herself."
+  },
+  "brand": {
+    "name": "Narina",
+    "role": "Author and creator of JE SUIS",
+    "formats": "Books • games • guides • learning projects"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "books": "Books",
+    "products": "Products",
+    "project": "I Am",
+    "blog": "My thoughts",
+    "contact": "Contact",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu"
+  },
+  "hero": {
+    "title": "I AM",
+    "lead": "Life begins the moment you choose yourself.",
+    "text": "Author and creator of books, games and projects about life, change and self-expression.",
+    "ctaAbout": "Get to know me",
+    "ctaProducts": "My products",
+    "photo": "Author photo"
+  },
+  "who": {
+    "eyebrow": "Who I am",
+    "title": "I don't teach how to live. I explore life together with you.",
+    "text": "I write books and create games, guides and learning projects about what matters to me: a woman, her choices, her inner foundation, self-fulfilment, change and the chance to begin a new life at any age.",
+    "path": "My own path became the foundation of many of my projects.",
+    "cta": "My story"
+  },
+  "idea": {
+    "eyebrow": "My main idea",
+    "title": "JE SUIS means “I AM”",
+    "not": ["Not “who I need to become”.", "Not “how others want to see me”.", "Not “what is expected of me”."],
+    "but": "But:",
+    "questions": ["Who am I?", "What do I want?", "What life do I choose?"],
+    "outro": "This is where my philosophy was born."
+  },
+  "project": {
+    "eyebrow": "Main project",
+    "title": "I AM",
+    "subtitle": "Life after 50",
+    "lead": "A new chapter doesn't begin when your age changes. It begins when the way you treat yourself changes.",
+    "themesTitle": "What the programme is about",
+    "themes": [
+      "Sense of self",
+      "Relationship with yourself",
+      "Desires and dreams",
+      "Self-fulfilment",
+      "Being visible",
+      "A new life",
+      "Your surroundings",
+      "Freedom of choice"
+    ],
+    "more": "About the project",
+    "soon": "Coming soon",
+    "join": "Join",
+    "quote": "The path of a woman who one day realises: the most important journey is the journey back to herself.",
+    "soonNote": "The programme is being prepared. Get the free guide and you'll be the first to hear about the launch.",
+    "openNote": "Payment and participation are via the project's Telegram channel."
+  },
+  "products": {
+    "eyebrow": "My products",
+    "title": "Books, guides and games",
+    "all": "All",
+    "categories": {
+      "book": "Books",
+      "guide": "Guides",
+      "game": "Games",
+      "course": "Learning programmes"
+    },
+    "category": {
+      "book": "Book",
+      "guide": "Guide",
+      "game": "Game",
+      "course": "Programme"
+    },
+    "more": "Learn more",
+    "buy": "Buy",
+    "soon": "Coming soon",
+    "viewAll": "All products",
+    "empty": "Materials will appear here soon.",
+    "coursesNote": "Video programmes, mini-courses and new projects will appear here.",
+    "back": "All products",
+    "buyUnavailable": "Online payment is coming to the site soon. Meanwhile, message me on Telegram and I'll tell you how to buy.",
+    "writeMe": "Message me on Telegram"
+  },
+  "video": {
+    "eyebrow": "My story",
+    "title": "Let's get acquainted",
+    "text": "Not an advert. Just a conversation about who I am and why I do what I do.",
+    "cta": "My projects",
+    "placeholder": "The introduction video will appear here soon"
+  },
+  "blog": {
+    "eyebrow": "Articles",
+    "title": "My thoughts",
+    "viewAll": "All articles",
+    "read": "Read",
+    "empty": "The first articles are coming soon.",
+    "back": "All articles",
+    "more": "Read also"
+  },
+  "lead": {
+    "eyebrow": "Free material",
+    "title": "Get my free mini-guide",
+    "guide": "“7 steps to a new life”",
+    "name": "Name",
+    "email": "Email",
+    "submit": "Get it",
+    "sending": "Sending…",
+    "success": "Thank you! The guide is on its way to your inbox.",
+    "error": "Something went wrong. Please try again.",
+    "consent": "By clicking “Get it”, you agree to the processing of your personal data."
+  },
+  "contacts": {
+    "eyebrow": "Contact",
+    "title": "Let's stay in touch",
+    "write": "Message me",
+    "formTitle": "Or write to me here",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "send": "Send",
+    "sending": "Sending…",
+    "success": "Message sent. I'll get back to you soon.",
+    "error": "Something went wrong. Please try again."
+  },
+  "about": {
+    "eyebrow": "About me",
+    "title": "My story",
+    "intro": "About a life you can start again. About a woman who chooses herself. About the fact that it's never too late to become yourself.",
+    "story": "The story of my path will be here soon — the text is being prepared.",
+    "cta": "My products"
+  },
+  "footer": {
+    "rights": "All rights reserved",
+    "legalTitle": "Documents"
+  },
+  "legal": {
+    "privacy": "Privacy policy",
+    "terms": "Terms of purchase",
+    "personal-data": "Personal data processing",
+    "placeholder": "The text of this document will be published soon."
+  },
+  "notFound": {
+    "title": "Page not found",
+    "text": "It may have been removed, or the address is incorrect.",
+    "home": "Back to home"
+  }
+}

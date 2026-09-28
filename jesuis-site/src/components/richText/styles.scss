@@ -1,0 +1,95 @@
+.rich-text {
+  font-size: 19px;
+  line-height: 1.75;
+
+  > * + * {
+    margin-top: 1.1em;
+  }
+
+  h2,
+  h3,
+  h4 {
+    margin-top: 1.8em;
+  }
+
+  h2 {
+    font-size: 40px;
+  }
+
+  h3 {
+    font-size: 32px;
+  }
+
+  h4 {
+    font-size: 26px;
+  }
+
+  a {
+    color: var(--color-accent);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+
+  strong {
+    font-weight: 600;
+  }
+
+  em {
+    font-style: italic;
+  }
+
+  ul,
+  ol {
+    padding-left: 1.4em;
+  }
+
+  ul {
+    list-style: disc;
+  }
+
+  ol {
+    list-style: decimal;
+  }
+
+  li + li {
+    margin-top: 0.4em;
+  }
+
+  blockquote {
+    margin: 1.6em 0;
+    padding-left: 24px;
+    border-left: 2px solid var(--color-accent);
+    font-family: var(--font-heading);
+    font-size: 28px;
+    font-style: italic;
+    line-height: 1.35;
+  }
+
+  &__figure {
+    margin: 2em 0;
+
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: var(--radius);
+    }
+
+    figcaption {
+      margin-top: 10px;
+      font-size: 14px;
+      color: var(--color-text-muted);
+    }
+  }
+
+  @media (max-width: 768px) {
+    font-size: 18px;
+
+    h2 {
+      font-size: 32px;
+    }
+
+    blockquote {
+      font-size: 24px;
+    }
+  }
+}

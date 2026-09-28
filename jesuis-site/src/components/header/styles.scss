@@ -1,0 +1,144 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: color-mix(in srgb, var(--color-bg) 92%, transparent);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--color-line);
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: var(--header-height);
+  }
+
+  &__logo {
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
+  }
+
+  &__logo-mark {
+    font-family: var(--font-heading);
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+  }
+
+  &__logo-name {
+    margin-top: 4px;
+    font-size: 11px;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--color-text-muted);
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+
+  &__link {
+    position: relative;
+    font-size: 15px;
+    font-weight: 500;
+    transition: color 0.2s;
+
+    &:hover,
+    &--active {
+      color: var(--color-accent);
+    }
+
+    &--active::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -6px;
+      height: 1px;
+      background: currentColor;
+    }
+  }
+
+  &__burger {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+    width: 44px;
+    height: 44px;
+    padding: 10px;
+    cursor: pointer;
+
+    span {
+      display: block;
+      height: 1.5px;
+      background: var(--color-text);
+      transition: transform 0.25s;
+    }
+
+    &[aria-expanded="true"] span:first-child {
+      transform: translateY(4.75px) rotate(45deg);
+    }
+
+    &[aria-expanded="true"] span:last-child {
+      transform: translateY(-4.75px) rotate(-45deg);
+    }
+  }
+
+  &__drawer {
+    display: none;
+  }
+
+  @media (max-width: 1024px) {
+    &__nav {
+      display: none;
+    }
+
+    &__burger {
+      display: flex;
+    }
+
+    &__logo-mark {
+      font-size: 24px;
+    }
+
+    &__drawer {
+      position: fixed;
+      inset: var(--header-height) 0 0 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 40px var(--gutter) calc(40px + env(safe-area-inset-bottom));
+      background: var(--color-bg);
+      opacity: 0;
+      visibility: hidden;
+      transition:
+        opacity 0.25s,
+        visibility 0.25s;
+
+      &--open {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+
+    &__drawer-nav {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    &__drawer-link {
+      font-family: var(--font-heading);
+      font-size: 36px;
+      line-height: 1.1;
+
+      &--active {
+        color: var(--color-accent);
+      }
+    }
+  }
+}

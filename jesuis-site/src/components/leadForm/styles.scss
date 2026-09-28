@@ -1,0 +1,52 @@
+.lead-form {
+  padding: calc(var(--section-gap) / 2) 0;
+
+  &__inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 64px;
+    align-items: center;
+    padding: 72px;
+    background: var(--color-accent-soft);
+    border-radius: var(--radius);
+  }
+
+  &__title {
+    font-size: clamp(36px, 4vw, 56px);
+  }
+
+  &__guide {
+    margin-top: 16px;
+    font-family: var(--font-heading);
+    font-size: 30px;
+    font-style: italic;
+    color: var(--color-accent);
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    .btn {
+      margin-top: 8px;
+    }
+  }
+
+  &__note {
+    font-size: 13px;
+    color: var(--color-text-muted);
+  }
+
+  @media (max-width: 900px) {
+    &__inner {
+      grid-template-columns: 1fr;
+      gap: 32px;
+      padding: 40px 24px;
+    }
+
+    &__guide {
+      font-size: 24px;
+    }
+  }
+}

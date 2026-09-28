@@ -1,0 +1,157 @@
+{
+  "meta": {
+    "title": "JE SUIS — l'espace d'autrice de Narina",
+    "description": "Livres, jeux, guides et projets d'apprentissage sur la vie, le changement et l'affirmation de soi. Sur une femme qui se choisit."
+  },
+  "brand": {
+    "name": "Narina",
+    "role": "Autrice et créatrice du projet JE SUIS",
+    "formats": "Livres • jeux • guides • projets d'apprentissage"
+  },
+  "nav": {
+    "home": "Accueil",
+    "about": "À propos",
+    "books": "Livres",
+    "products": "Produits",
+    "project": "Je suis",
+    "blog": "Mes pensées",
+    "contact": "Contact",
+    "openMenu": "Ouvrir le menu",
+    "closeMenu": "Fermer le menu"
+  },
+  "hero": {
+    "title": "JE SUIS",
+    "lead": "La vie commence au moment où vous vous choisissez.",
+    "text": "Autrice et créatrice de livres, de jeux et de projets sur la vie, le changement et l'affirmation de soi.",
+    "ctaAbout": "Faire connaissance",
+    "ctaProducts": "Mes produits",
+    "photo": "Photo de l'autrice"
+  },
+  "who": {
+    "eyebrow": "Qui je suis",
+    "title": "Je n'apprends pas à vivre. J'explore la vie avec vous.",
+    "text": "J'écris des livres, je crée des jeux, des guides et des projets d'apprentissage sur ce qui me touche : la femme, ses choix, son ancrage intérieur, l'accomplissement de soi, le changement et la possibilité de commencer une nouvelle vie à tout âge.",
+    "path": "Mon propre chemin est devenu la base de nombreux projets.",
+    "cta": "Mon histoire"
+  },
+  "idea": {
+    "eyebrow": "Mon idée principale",
+    "title": "JE SUIS, c'est « Я ЕСТЬ »",
+    "not": ["Pas « qui je dois devenir ».", "Pas « comment on veut me voir ».", "Pas « ce qu'on attend de moi »."],
+    "but": "Mais :",
+    "questions": ["Qui suis-je ?", "Qu'est-ce que je veux ?", "Quelle vie est-ce que je choisis ?"],
+    "outro": "C'est de là qu'est née ma philosophie."
+  },
+  "project": {
+    "eyebrow": "Projet principal",
+    "title": "JE SUIS",
+    "subtitle": "La vie après 50 ans",
+    "lead": "Un nouveau chapitre ne commence pas quand l'âge change. Il commence quand le regard que l'on porte sur soi change.",
+    "themesTitle": "Le programme en bref",
+    "themes": [
+      "Le ressenti de soi",
+      "La relation à soi",
+      "Désirs et rêves",
+      "L'accomplissement de soi",
+      "Oser se montrer",
+      "Une nouvelle vie",
+      "L'entourage",
+      "La liberté de choisir"
+    ],
+    "more": "Découvrir le projet",
+    "soon": "Bientôt",
+    "join": "Rejoindre",
+    "quote": "Le chemin d'une femme qui comprend un jour que le voyage le plus important est le retour à soi.",
+    "soonNote": "Le programme est en préparation. Recevez le guide gratuit et soyez la première informée du lancement.",
+    "openNote": "Paiement et participation via la chaîne Telegram du projet."
+  },
+  "products": {
+    "eyebrow": "Mes produits",
+    "title": "Livres, guides et jeux",
+    "all": "Tout",
+    "categories": {
+      "book": "Livres",
+      "guide": "Guides",
+      "game": "Jeux",
+      "course": "Programmes"
+    },
+    "category": {
+      "book": "Livre",
+      "guide": "Guide",
+      "game": "Jeu",
+      "course": "Programme"
+    },
+    "more": "En savoir plus",
+    "buy": "Acheter",
+    "soon": "Bientôt",
+    "viewAll": "Tous les produits",
+    "empty": "Les contenus arrivent bientôt.",
+    "coursesNote": "Programmes vidéo, mini-cours et nouveaux projets apparaîtront ici.",
+    "back": "Tous les produits",
+    "buyUnavailable": "Le paiement en ligne arrive bientôt sur le site. En attendant, écrivez-moi sur Telegram pour savoir comment l'acheter.",
+    "writeMe": "M'écrire sur Telegram"
+  },
+  "video": {
+    "eyebrow": "Mon histoire",
+    "title": "Faisons connaissance",
+    "text": "Pas une publicité. Simplement une conversation sur qui je suis et pourquoi je fais ce que je fais.",
+    "cta": "Mes projets",
+    "placeholder": "La vidéo de présentation arrive bientôt"
+  },
+  "blog": {
+    "eyebrow": "Articles",
+    "title": "Mes pensées",
+    "viewAll": "Tous les articles",
+    "read": "Lire",
+    "empty": "Les premiers articles arrivent bientôt.",
+    "back": "Tous les articles",
+    "more": "À lire aussi"
+  },
+  "lead": {
+    "eyebrow": "Contenu gratuit",
+    "title": "Recevez mon mini-guide gratuit",
+    "guide": "« 7 étapes vers une nouvelle vie »",
+    "name": "Prénom",
+    "email": "Email",
+    "submit": "Recevoir",
+    "sending": "Envoi…",
+    "success": "Merci ! Le guide arrive dans votre boîte mail.",
+    "error": "L'envoi a échoué. Veuillez réessayer.",
+    "consent": "En cliquant sur « Recevoir », vous acceptez le traitement de vos données personnelles."
+  },
+  "contacts": {
+    "eyebrow": "Contact",
+    "title": "Restons en contact",
+    "write": "M'écrire",
+    "formTitle": "Ou écrivez-moi ici",
+    "name": "Prénom",
+    "email": "Email",
+    "message": "Message",
+    "send": "Envoyer",
+    "sending": "Envoi…",
+    "success": "Message envoyé. Je vous réponds très vite.",
+    "error": "L'envoi a échoué. Veuillez réessayer."
+  },
+  "about": {
+    "eyebrow": "À propos",
+    "title": "Mon histoire",
+    "intro": "Sur une vie que l'on peut recommencer. Sur une femme qui se choisit. Sur le fait qu'il n'est jamais trop tard pour devenir soi-même.",
+    "story": "Le récit de mon parcours arrive bientôt — le texte est en préparation.",
+    "cta": "Mes produits"
+  },
+  "footer": {
+    "rights": "Tous droits réservés",
+    "legalTitle": "Documents"
+  },
+  "legal": {
+    "privacy": "Politique de confidentialité",
+    "terms": "Conditions d'achat",
+    "personal-data": "Traitement des données personnelles",
+    "placeholder": "Le texte de ce document sera publié prochainement."
+  },
+  "notFound": {
+    "title": "Page introuvable",
+    "text": "Elle a peut-être été supprimée, ou l'adresse est incorrecte.",
+    "home": "Retour à l'accueil"
+  }
+}
