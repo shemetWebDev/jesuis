@@ -37,12 +37,23 @@
     font-weight: 400;
     letter-spacing: 0.02em;
     line-height: 0.95;
+    color: var(--color-accent);
   }
 
   &__lead {
     margin-top: 32px;
     font-family: var(--font-heading);
     font-size: clamp(26px, 2.6vw, 38px);
+
+    /* короткая золотая черта под «Я ЕСТЬ» */
+    &::before {
+      content: "";
+      display: block;
+      width: 64px;
+      height: 1px;
+      margin-bottom: 28px;
+      background: var(--color-gold);
+    }
     font-style: italic;
     line-height: 1.25;
   }
@@ -143,14 +154,22 @@
 /* idea */
 .idea {
   padding: var(--section-gap) 0;
-  background: var(--color-surface-muted);
+  background: var(--gradient-espresso);
+  color: var(--color-on-dark);
+
+  .eyebrow {
+    color: var(--color-gold);
+  }
 
   &__inner {
     text-align: center;
   }
 
   &__title {
-    font-size: clamp(44px, 6vw, 96px);
+    font-size: clamp(56px, 8vw, 128px);
+    font-weight: 400;
+    letter-spacing: 0.06em;
+    color: var(--color-gold);
   }
 
   &__columns {
@@ -167,11 +186,12 @@
     flex-direction: column;
     gap: 16px;
     font-size: 22px;
-    color: var(--color-text-muted);
+    color: var(--color-on-dark);
+    opacity: 0.6;
 
     li {
       text-decoration: line-through;
-      text-decoration-color: var(--color-accent);
+      text-decoration-color: var(--color-gold);
       text-decoration-thickness: 1px;
     }
   }
@@ -182,10 +202,11 @@
     font-weight: 600;
     letter-spacing: 0.16em;
     text-transform: uppercase;
-    color: var(--color-accent);
+    color: var(--color-gold);
   }
 
   &__questions {
+    color: var(--color-on-dark);
     font-family: var(--font-heading);
     font-size: clamp(32px, 3.4vw, 48px);
     font-weight: 500;
@@ -197,6 +218,7 @@
     font-family: var(--font-heading);
     font-size: 26px;
     font-style: italic;
+    color: var(--color-gold);
   }
 
   @media (max-width: 768px) {
@@ -222,12 +244,12 @@
   grid-template-columns: 1.2fr 1fr;
   gap: 80px;
   padding: 96px 80px;
-  background: var(--color-dark);
+  background: var(--gradient-emerald);
   color: var(--color-on-dark);
   border-radius: var(--radius);
 
   .eyebrow {
-    color: var(--color-accent-soft);
+    color: var(--color-gold);
   }
 
   &__title {
@@ -240,6 +262,18 @@
     font-family: var(--font-heading);
     font-size: clamp(28px, 3vw, 44px);
     font-style: italic;
+    color: var(--color-gold);
+  }
+
+  &__quote {
+    max-width: 520px;
+    margin-top: 32px;
+    padding-left: 20px;
+    border-left: 1px solid var(--color-gold);
+    font-family: var(--font-heading);
+    font-size: 24px;
+    font-style: italic;
+    line-height: 1.35;
   }
 
   &__lead {
@@ -265,11 +299,11 @@
   }
 
   .project-themes__item {
-    border-color: rgba(250, 246, 241, 0.15);
+    border-color: var(--color-on-dark-line);
   }
 
   .project-themes__num {
-    color: var(--color-accent-soft);
+    color: var(--color-gold);
   }
 
   @media (max-width: 1024px) {
@@ -295,7 +329,7 @@
     font-family: var(--font-body);
     font-size: 13px;
     font-weight: 600;
-    color: var(--color-accent);
+    color: var(--color-gold-deep);
   }
 }
 
@@ -310,26 +344,6 @@
     display: flex;
     justify-content: center;
     margin-top: 40px;
-  }
-}
-
-/* quote band */
-.quote-band {
-  text-align: center;
-
-  &__quote {
-    font-family: var(--font-heading);
-    font-size: clamp(32px, 3.6vw, 52px);
-    font-style: italic;
-    line-height: 1.25;
-  }
-
-  &__actions {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 16px;
-    margin-top: 48px;
   }
 }
 

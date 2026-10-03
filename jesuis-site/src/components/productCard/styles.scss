@@ -8,10 +8,12 @@
   overflow: hidden;
   transition:
     box-shadow 0.25s,
-    transform 0.25s;
+    transform 0.25s,
+    border-color 0.25s;
 
   &:hover {
-    box-shadow: 0 18px 40px -24px rgba(43, 38, 35, 0.35);
+    border-color: var(--color-gold);
+    box-shadow: 0 18px 40px -24px rgba(4, 57, 39, 0.35);
     transform: translateY(-2px);
   }
 
@@ -59,15 +61,11 @@
     font-weight: 600;
     letter-spacing: 0.16em;
     text-transform: uppercase;
-    color: var(--color-accent);
+    color: var(--color-gold-deep);
   }
 
   &__title {
     font-size: 30px;
-
-    a:hover {
-      color: var(--color-accent);
-    }
   }
 
   &__subtitle {
@@ -101,6 +99,7 @@
     font-family: var(--font-heading);
     font-size: 26px;
     font-weight: 600;
+    color: var(--color-gold-deep);
   }
 
   @media (max-width: 768px) {

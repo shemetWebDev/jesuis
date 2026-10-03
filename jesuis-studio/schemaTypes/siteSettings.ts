@@ -12,6 +12,7 @@ export default defineType({
 
   groups: [
     {name: 'project', title: 'Проект «Я есть»', default: true},
+    {name: 'photos', title: 'Фото'},
     {name: 'contacts', title: 'Контакты'},
     {name: 'media', title: 'Видео'},
   ],
@@ -32,6 +33,25 @@ export default defineType({
       title: 'Ссылка для кнопки «Присоединиться» (Telegram-канал)',
       type: 'url',
       group: 'project',
+    }),
+
+    defineField({
+      name: 'heroPhoto',
+      title: 'Фото на главной (первый экран)',
+      type: 'image',
+      group: 'photos',
+      options: {hotspot: true},
+      description:
+        'Вертикальное фото, лучше 1600×2000 и больше. Нажмите на кружок в фото, чтобы отметить лицо — при обрезке на телефоне оно останется в кадре.',
+    }),
+
+    defineField({
+      name: 'aboutPhoto',
+      title: 'Фото на странице «Обо мне» (необязательно)',
+      type: 'image',
+      group: 'photos',
+      options: {hotspot: true},
+      description: 'Если пусто — используется фото с главной.',
     }),
 
     defineField({

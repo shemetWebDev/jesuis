@@ -5,6 +5,7 @@ import type { Locale } from "@/src/i18n/routing";
 import { Link } from "@/src/i18n/navigation";
 import { fetchSettings } from "@/src/sanity/fetch";
 import PhotoPlaceholder from "@/src/components/photoPlaceholder/PhotoPlaceholder";
+import SanityImage from "@/src/components/sanityImage/SanityImage";
 import VideoSection from "@/src/components/sections/VideoSection";
 import LeadForm from "@/src/components/leadForm/LeadForm";
 
@@ -34,18 +35,25 @@ export default async function AboutPage({ params }: Props) {
       <section className="about">
         <div className="container about__inner">
           <div className="about__photo">
-            {/* TODO: фото автора */}
-            <PhotoPlaceholder label={tBrand("name")} />
+            {settings.aboutPhoto ? (
+              <SanityImage
+                image={settings.aboutPhoto}
+                alt={tBrand("name")}
+                sizes="(max-width: 900px) 100vw, 45vw"
+                priority
+              />
+            ) : (
+              <PhotoPlaceholder label={tBrand("name")} />
+            )}
           </div>
 
           <div className="about__content">
             <span className="eyebrow">{t("eyebrow")}</span>
             <h1 className="page-head__title">{t("title")}</h1>
             <p className="about__intro">{t("intro")}</p>
-            <p className="about__who">{tWho("title")}</p>
+            {/* Слоган и «Мой путь…» — на главной; здесь только полный текст */}
             <p>{tWho("text")}</p>
-            <p>{tWho("path")}</p>
-            <p className="about__story">{t("story")}</p>
+            {/* TODO: история автора — от заказчицы */}
             <p className="about__sign">
               {tBrand("name")} · {tBrand("role")}
             </p>

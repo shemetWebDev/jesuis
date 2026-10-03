@@ -6,7 +6,8 @@ const image = `{
   "url": asset->url,
   "width": asset->metadata.dimensions.width,
   "height": asset->metadata.dimensions.height,
-  "lqip": asset->metadata.lqip
+  "lqip": asset->metadata.lqip,
+  "hotspot": hotspot{x, y}
 }`;
 
 const body = (field: string) => `${t(field)}[]{
@@ -26,7 +27,9 @@ export const settingsQuery = `*[_id == "siteSettings"][0]{
   instagramUrl,
   youtubeUrl,
   email,
-  introVideoUrl
+  introVideoUrl,
+  "heroPhoto": heroPhoto${image},
+  "aboutPhoto": select(defined(aboutPhoto.asset) => aboutPhoto${image}, heroPhoto${image})
 }`;
 
 const postCardFields = `

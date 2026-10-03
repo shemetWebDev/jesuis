@@ -1,11 +1,11 @@
 .project-hero {
   padding: 120px 0;
-  background: var(--color-dark);
+  background: var(--gradient-emerald);
   color: var(--color-on-dark);
   text-align: center;
 
   .eyebrow {
-    color: var(--color-accent-soft);
+    color: var(--color-gold);
   }
 
   &__inner {
@@ -25,6 +25,7 @@
     font-family: var(--font-heading);
     font-size: clamp(30px, 3.4vw, 52px);
     font-style: italic;
+    color: var(--color-gold);
   }
 
   &__lead {

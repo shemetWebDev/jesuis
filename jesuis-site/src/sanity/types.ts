@@ -5,6 +5,7 @@ export type SanityImage = {
   width: number;
   height: number;
   lqip?: string;
+  hotspot?: { x: number; y: number };
 };
 
 export type ProductCategory = "book" | "guide" | "game" | "course";
@@ -18,6 +19,8 @@ export type SiteSettings = {
   youtubeUrl?: string;
   email?: string;
   introVideoUrl?: string;
+  heroPhoto?: SanityImage;
+  aboutPhoto?: SanityImage;
 };
 
 export type PostCard = {

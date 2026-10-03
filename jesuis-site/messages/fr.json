@@ -36,10 +36,18 @@
   },
   "idea": {
     "eyebrow": "Mon idée principale",
-    "title": "JE SUIS, c'est « Я ЕСТЬ »",
-    "not": ["Pas « qui je dois devenir ».", "Pas « comment on veut me voir ».", "Pas « ce qu'on attend de moi »."],
+    "title": "JE SUIS",
+    "not": [
+      "Pas « qui je dois devenir ».",
+      "Pas « comment on veut me voir ».",
+      "Pas « ce qu'on attend de moi »."
+    ],
     "but": "Mais :",
-    "questions": ["Qui suis-je ?", "Qu'est-ce que je veux ?", "Quelle vie est-ce que je choisis ?"],
+    "questions": [
+      "Qui suis-je ?",
+      "Qu'est-ce que je veux ?",
+      "Quelle vie est-ce que je choisis ?"
+    ],
     "outro": "C'est de là qu'est née ma philosophie."
   },
   "project": {
@@ -92,7 +100,7 @@
     "writeMe": "M'écrire sur Telegram"
   },
   "video": {
-    "eyebrow": "Mon histoire",
+    "eyebrow": "Vidéo",
     "title": "Faisons connaissance",
     "text": "Pas une publicité. Simplement une conversation sur qui je suis et pourquoi je fais ce que je fais.",
     "cta": "Mes projets",
@@ -136,7 +144,6 @@
     "eyebrow": "À propos",
     "title": "Mon histoire",
     "intro": "Sur une vie que l'on peut recommencer. Sur une femme qui se choisit. Sur le fait qu'il n'est jamais trop tard pour devenir soi-même.",
-    "story": "Le récit de mon parcours arrive bientôt — le texte est en préparation.",
     "cta": "Mes produits"
   },
   "footer": {

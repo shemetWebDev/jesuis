@@ -2,17 +2,29 @@
 
 :root {
   /* colors */
-  --color-bg: #faf6f1;
-  --color-surface: #ffffff;
-  --color-surface-muted: #f2ebe3;
-  --color-text: #2b2623;
-  --color-text-muted: #6e655e;
-  --color-accent: #9c5b45;
-  --color-accent-hover: #844a37;
-  --color-accent-soft: #efe0d8;
-  --color-line: #e6ddd3;
-  --color-dark: #2b2623;
-  --color-on-dark: #faf6f1;
+  /* палитра заказчицы: изумруд #043927, шалфей #8F9E8B, золото #D4AF37, эспрессо — на светлом креме */
+  --color-bg: #f4f1ea;
+  --color-surface: #fbfaf6;
+  --color-surface-muted: #e6e9e1;
+  --color-text: #2b201c;
+  --color-text-muted: #5b6456;
+  --color-accent: #043927; /* изумруд — кнопки, ссылки */
+  --color-accent-hover: #0a5239;
+  --color-accent-soft: #e0e5da;
+  --color-sage: #8f9e8b;
+  --color-gold: #d4af37; /* золото — детали, текст на тёмном */
+  --color-gold-deep: #7a5c1e; /* античное золото — мелкие подписи и цены на светлом */
+  --color-line: #d6dacd;
+  --color-dark: #043927;
+  --color-espresso: #2b201c;
+  --color-on-dark: #f6efe2;
+  --color-on-dark-line: rgba(212, 175, 55, 0.25);
+
+  /* «глубина»: мягкий блик, как на атласе и бархате из моодборда */
+  --gradient-emerald: radial-gradient(120% 140% at 12% 0%, #0d5c3f 0%, #043927 50%, #02241a 100%);
+  --gradient-espresso: radial-gradient(110% 130% at 50% 0%, #3d2d25 0%, #2b201c 55%, #1d1511 100%);
+  --gradient-espresso-deep: radial-gradient(90% 160% at 0% 0%, #3a2a22 0%, #241913 55%, #1a120e 100%);
+  --gradient-sage: radial-gradient(120% 140% at 0% 0%, #a3b19f 0%, #8f9e8b 55%, #7c8b78 100%);
 
   /* typography */
   --font-heading: var(--font-cormorant), "Times New Roman", serif;
@@ -88,13 +100,23 @@ h4 {
 }
 
 .eyebrow {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
   margin-bottom: 20px;
   font-size: 13px;
   font-weight: 600;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: var(--color-accent);
+  color: var(--color-gold-deep);
+
+  /* тонкая золотая линия перед подписью */
+  &::before {
+    content: "";
+    width: 28px;
+    height: 1px;
+    background: var(--color-gold);
+  }
 }
 
 .section-title {
@@ -142,10 +164,20 @@ h4 {
 
 .btn--primary {
   background: var(--color-accent);
-  color: #fff;
+  color: var(--color-on-dark);
 
   &:not(:disabled):hover {
     background: var(--color-accent-hover);
+  }
+}
+
+/* золотая кнопка — для тёмных (изумрудных) блоков */
+.btn--gold {
+  background: var(--color-gold);
+  color: var(--color-dark);
+
+  &:not(:disabled):hover {
+    background: #e2c25a;
   }
 }
 
@@ -178,11 +210,51 @@ h4 {
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--color-accent);
-  border-bottom: 1px solid currentColor;
-  padding-bottom: 2px;
+}
+
+/* Наведение на текстовые ссылки: цвет текста не меняется,
+   снизу слева направо прорисовывается тонкая золотая полоска.
+   Сделано фоном, а не ::after — так корректно работает и на многострочных заголовках */
+.header__link,
+.footer__link,
+.back-link,
+.link-arrow,
+.social-links--labels .social-links__link span,
+.product-card__title a,
+.post-card__title a {
+  padding-bottom: 3px;
+  background-image: linear-gradient(var(--color-gold), var(--color-gold));
+  background-position: left 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 1px;
+  transition: background-size 0.35s ease;
+}
+
+.header__link:hover,
+.header__link--active,
+.footer__link:hover,
+.back-link:hover,
+.link-arrow:hover,
+.social-links--labels .social-links__link:hover span,
+.product-card__title a:hover,
+.post-card__title a:hover {
+  background-size: 100% 1px;
+}
+
+/* У «Купить», «Все продукты» и т.п. в покое остаётся тонкая линия-подсказка,
+   поверх неё прорисовывается золотая */
+.link-arrow {
+  background-image:
+    linear-gradient(var(--color-gold), var(--color-gold)),
+    linear-gradient(var(--color-line), var(--color-line));
+  background-size:
+    0% 1px,
+    100% 1px;
 
   &:hover {
-    color: var(--color-accent-hover);
+    background-size:
+      100% 1px,
+      100% 1px;
   }
 }
 

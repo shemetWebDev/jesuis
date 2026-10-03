@@ -25,7 +25,7 @@ export default function ProjectButton({
       href={settings.mainProjectUrl}
       target="_blank"
       rel="noopener noreferrer"
-      className={`btn btn--${variant === "light" ? "light" : "primary"}`}
+      className={`btn btn--${variant === "light" ? "gold" : "primary"}`}
     >
       {t("join")}
     </a>

@@ -30,12 +30,7 @@
 
   &__title {
     margin-top: 8px;
-    font-size: 32px;
-
-    a:hover {
-      color: var(--color-accent);
-    }
-  }
+    font-size: 32px;  }
 
   &__excerpt {
     margin-top: 12px;
@@ -51,7 +46,6 @@
     align-self: flex-start;
     margin-top: auto;
     padding-top: 20px;
-    border-bottom: 0;
   }
 
   @media (max-width: 768px) {

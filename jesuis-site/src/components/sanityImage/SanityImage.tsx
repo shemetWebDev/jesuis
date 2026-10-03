@@ -21,6 +21,12 @@ export default function SanityImage({ image, alt, sizes, className, priority }: 
       priority={priority}
       placeholder={image.lqip ? "blur" : "empty"}
       blurDataURL={image.lqip}
+      // Точка фокуса из админки: при object-fit: cover важная часть остаётся в кадре
+      style={
+        image.hotspot
+          ? { objectPosition: `${image.hotspot.x * 100}% ${image.hotspot.y * 100}%` }
+          : undefined
+      }
     />
   );
 }

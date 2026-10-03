@@ -1,6 +1,6 @@
 .footer {
   margin-top: calc(var(--section-gap) / 2);
-  background: var(--color-dark);
+  background: var(--gradient-espresso-deep);
   color: var(--color-on-dark);
 
   &__inner {
@@ -17,6 +17,7 @@
     font-weight: 600;
     letter-spacing: 0.08em;
     line-height: 1;
+    color: var(--color-gold);
   }
 
   &__role {
@@ -36,19 +37,15 @@
   }
 
   &__link {
+    align-self: flex-start;
     font-size: 15px;
-    opacity: 0.8;
-    transition: opacity 0.2s;
-
-    &:hover {
-      opacity: 1;
-    }
+    color: color-mix(in srgb, var(--color-on-dark) 85%, transparent);
   }
 
   &__bottom {
     padding-top: 24px;
     padding-bottom: 32px;
-    border-top: 1px solid rgba(250, 246, 241, 0.15);
+    border-top: 1px solid var(--color-on-dark-line);
     font-size: 13px;
     opacity: 0.6;
   }

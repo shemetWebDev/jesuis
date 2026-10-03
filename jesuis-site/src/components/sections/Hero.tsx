@@ -1,10 +1,12 @@
 import { useTranslations } from "next-intl";
 import { Link } from "@/src/i18n/navigation";
+import type { SanityImage as SanityImageData } from "@/src/sanity/types";
 import PhotoPlaceholder from "../photoPlaceholder/PhotoPlaceholder";
+import SanityImage from "../sanityImage/SanityImage";
 
 import "./styles.scss";
 
-export default function Hero() {
+export default function Hero({ photo }: { photo?: SanityImageData }) {
   const t = useTranslations("hero");
   const tBrand = useTranslations("brand");
 
@@ -27,8 +29,16 @@ export default function Hero() {
         </div>
 
         <div className="hero__photo">
-          {/* TODO: заменить на фото автора, когда появится */}
-          <PhotoPlaceholder label={t("photo")} />
+          {photo ? (
+            <SanityImage
+              image={photo}
+              alt={`${tBrand("name")} — JE SUIS`}
+              sizes="(max-width: 1024px) 100vw, 50vw"
+              priority
+            />
+          ) : (
+            <PhotoPlaceholder label={t("photo")} />
+          )}
         </div>
       </div>
     </section>

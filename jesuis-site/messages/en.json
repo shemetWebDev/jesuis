@@ -36,10 +36,18 @@
   },
   "idea": {
     "eyebrow": "My main idea",
-    "title": "JE SUIS means “I AM”",
-    "not": ["Not “who I need to become”.", "Not “how others want to see me”.", "Not “what is expected of me”."],
+    "title": "JE SUIS",
+    "not": [
+      "Not “who I need to become”.",
+      "Not “how others want to see me”.",
+      "Not “what is expected of me”."
+    ],
     "but": "But:",
-    "questions": ["Who am I?", "What do I want?", "What life do I choose?"],
+    "questions": [
+      "Who am I?",
+      "What do I want?",
+      "What life do I choose?"
+    ],
     "outro": "This is where my philosophy was born."
   },
   "project": {
@@ -92,7 +100,7 @@
     "writeMe": "Message me on Telegram"
   },
   "video": {
-    "eyebrow": "My story",
+    "eyebrow": "Video",
     "title": "Let's get acquainted",
     "text": "Not an advert. Just a conversation about who I am and why I do what I do.",
     "cta": "My projects",
@@ -136,7 +144,6 @@
     "eyebrow": "About me",
     "title": "My story",
     "intro": "About a life you can start again. About a woman who chooses herself. About the fact that it's never too late to become yourself.",
-    "story": "The story of my path will be here soon — the text is being prepared.",
     "cta": "My products"
   },
   "footer": {

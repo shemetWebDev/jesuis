@@ -47,9 +47,10 @@
     border-radius: 0;
     font-size: 18px;
 
+    /* без заливки кружка; полоска под текстом — в globals.css */
     &:hover {
       background: none;
-      color: var(--color-accent);
+      color: var(--color-text);
     }
   }
 }

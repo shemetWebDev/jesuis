@@ -18,6 +18,7 @@ export default function ProjectTeaser({ settings }: { settings: SiteSettings }) 
             <h2 className="project-teaser__title">{t("title")}</h2>
             <p className="project-teaser__subtitle">{t("subtitle")}</p>
             <p className="project-teaser__lead">{t("lead")}</p>
+            <blockquote className="project-teaser__quote">{t("quote")}</blockquote>
             <div className="project-teaser__actions">
               <Link href="/project" className="btn btn--light">
                 {t("more")}
