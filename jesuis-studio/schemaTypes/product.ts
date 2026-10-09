@@ -5,6 +5,7 @@ const CATEGORY_OPTIONS = [
   {title: 'Книга', value: 'book'},
   {title: 'Гайд', value: 'guide'},
   {title: 'Игра', value: 'game'},
+  {title: 'Притчи и защита', value: 'parable'},
   {title: 'Обучающая программа', value: 'course'},
 ]
 
@@ -149,6 +150,16 @@ export default defineType({
       group: 'sale',
       options: {list: CURRENCY_OPTIONS, layout: 'radio'},
       initialValue: 'EUR',
+    }),
+
+    defineField({
+      name: 'buyUrl',
+      title: 'Ссылка на оплату (Telegram / Tribute)',
+      type: 'url',
+      group: 'sale',
+      description:
+        'Куда ведёт кнопка «Купить». Ссылка на товар в Tribute или на Telegram. Если пусто — на сайте вместо «Купить» показывается «Скоро».',
+      validation: (r) => r.uri({scheme: ['https', 'tg']}),
     }),
 
     defineField({

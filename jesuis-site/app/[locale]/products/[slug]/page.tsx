@@ -4,8 +4,9 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 
 import type { Locale } from "@/src/i18n/routing";
 import { Link } from "@/src/i18n/navigation";
-import { fetchProduct, fetchSettings } from "@/src/sanity/fetch";
+import { fetchProduct } from "@/src/sanity/fetch";
 import { formatPrice } from "@/src/utils/formatPrice";
+import { productBuyUrl } from "@/src/utils/productBuyUrl";
 import SanityImage from "@/src/components/sanityImage/SanityImage";
 import ProductCover from "@/src/components/productCover/ProductCover";
 import RichText from "@/src/components/richText/RichText";
@@ -31,10 +32,9 @@ export default async function ProductPage({ params }: Props) {
   const { locale, slug } = await params;
   setRequestLocale(locale);
 
-  const [t, product, settings] = await Promise.all([
+  const [t, product] = await Promise.all([
     getTranslations("products"),
     fetchProduct(locale, slug),
-    fetchSettings(),
   ]);
   if (!product) notFound();
 
@@ -83,10 +83,8 @@ export default async function ProductPage({ params }: Props) {
             )}
 
             <BuyBlock
-              slug={product.slug}
               price={formatPrice(product.price, product.currency)}
-              isSoon={product.status === "soon"}
-              telegramUrl={settings.telegramUrl}
+              buyUrl={productBuyUrl(product)}
             />
 
             <RichText value={product.body} />

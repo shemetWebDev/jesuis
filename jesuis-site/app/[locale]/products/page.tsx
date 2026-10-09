@@ -10,7 +10,7 @@ import ProductCard from "@/src/components/productCard/ProductCard";
 
 import "./styles.scss";
 
-const CATEGORIES: ProductCategory[] = ["book", "guide", "game", "course"];
+const CATEGORIES: ProductCategory[] = ["book", "guide", "game", "parable", "course"];
 
 type Props = {
   params: Promise<{ locale: Locale }>;

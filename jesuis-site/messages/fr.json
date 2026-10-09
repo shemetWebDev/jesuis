@@ -81,12 +81,14 @@
       "book": "Livres",
       "guide": "Guides",
       "game": "Jeux",
+      "parable": "Paraboles et protection",
       "course": "Programmes"
     },
     "category": {
       "book": "Livre",
       "guide": "Guide",
       "game": "Jeu",
+      "parable": "Paraboles et protection",
       "course": "Programme"
     },
     "more": "En savoir plus",
@@ -95,9 +97,7 @@
     "viewAll": "Tous les produits",
     "empty": "Les contenus arrivent bientôt.",
     "coursesNote": "Programmes vidéo, mini-cours et nouveaux projets apparaîtront ici.",
-    "back": "Tous les produits",
-    "buyUnavailable": "Le paiement en ligne arrive bientôt sur le site. En attendant, écrivez-moi sur Telegram pour savoir comment l'acheter.",
-    "writeMe": "M'écrire sur Telegram"
+    "back": "Tous les produits"
   },
   "video": {
     "eyebrow": "Vidéo",

@@ -8,7 +8,7 @@ export type SanityImage = {
   hotspot?: { x: number; y: number };
 };
 
-export type ProductCategory = "book" | "guide" | "game" | "course";
+export type ProductCategory = "book" | "guide" | "game" | "parable" | "course";
 export type ProductStatus = "available" | "soon";
 
 export type SiteSettings = {
@@ -46,6 +46,7 @@ export type ProductCard = {
   status: ProductStatus;
   price?: number;
   currency?: string;
+  buyUrl?: string;
   cover?: SanityImage;
   coverVideoUrl?: string;
 };

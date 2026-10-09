@@ -81,12 +81,14 @@
       "book": "Books",
       "guide": "Guides",
       "game": "Games",
+      "parable": "Parables & Protection",
       "course": "Learning programmes"
     },
     "category": {
       "book": "Book",
       "guide": "Guide",
       "game": "Game",
+      "parable": "Parables & Protection",
       "course": "Programme"
     },
     "more": "Learn more",
@@ -95,9 +97,7 @@
     "viewAll": "All products",
     "empty": "Materials will appear here soon.",
     "coursesNote": "Video programmes, mini-courses and new projects will appear here.",
-    "back": "All products",
-    "buyUnavailable": "Online payment is coming to the site soon. Meanwhile, message me on Telegram and I'll tell you how to buy.",
-    "writeMe": "Message me on Telegram"
+    "back": "All products"
   },
   "video": {
     "eyebrow": "Video",

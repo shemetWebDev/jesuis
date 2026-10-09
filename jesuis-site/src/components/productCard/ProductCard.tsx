@@ -4,6 +4,7 @@ import { Link } from "@/src/i18n/navigation";
 import type { ProductCard as ProductCardData } from "@/src/sanity/types";
 import ProductCover from "../productCover/ProductCover";
 import { formatPrice } from "@/src/utils/formatPrice";
+import { productBuyUrl } from "@/src/utils/productBuyUrl";
 
 import "./styles.scss";
 
@@ -12,7 +13,7 @@ const baseClassName = "product-card";
 export default function ProductCard({ product }: { product: ProductCardData }) {
   const t = useTranslations("products");
   const href = `/products/${product.slug}`;
-  const isSoon = product.status === "soon";
+  const isSoon = !productBuyUrl(product);
   const price = formatPrice(product.price, product.currency);
 
   return (

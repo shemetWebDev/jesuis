@@ -62,6 +62,7 @@ const productCardFields = `
   status,
   price,
   currency,
+  buyUrl,
   "cover": coverImage${image},
   "coverVideoUrl": coverVideo.asset->url
 `;
