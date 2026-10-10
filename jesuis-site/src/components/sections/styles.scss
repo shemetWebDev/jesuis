@@ -345,6 +345,44 @@
     justify-content: center;
     margin-top: 40px;
   }
+
+  /* Вертикальное видео: на широком экране плеер слева, текст и кнопка справа */
+  &--vertical {
+    @media (min-width: 901px) {
+      .video-section__inner {
+        display: grid;
+        grid-template-columns: auto minmax(0, 560px);
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+          "media head"
+          "media cta";
+        justify-content: center;
+        column-gap: 96px;
+      }
+
+      .video-section__media {
+        grid-area: media;
+      }
+
+      .video-section__head {
+        grid-area: head;
+        align-self: end;
+        margin-bottom: 40px;
+      }
+
+      .video-section__cta {
+        grid-area: cta;
+        align-self: start;
+        justify-content: flex-start;
+        margin-top: 0;
+      }
+
+      /* Ширина считается от высоты: в колонке auto проценты не работают */
+      .video-embed--file {
+        width: calc(min(76vh, 720px) * var(--video-ratio));
+      }
+    }
+  }
 }
 
 /* contacts */

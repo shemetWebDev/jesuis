@@ -64,7 +64,11 @@ export default async function AboutPage({ params }: Props) {
         </div>
       </section>
 
-      <VideoSection url={settings.introVideoUrl} />
+      <VideoSection
+        url={settings.introVideoUrl}
+        fileUrl={settings.introVideoFileUrl}
+        poster={settings.introVideoPoster}
+      />
       <LeadForm />
     </>
   );

@@ -28,6 +28,8 @@ export const settingsQuery = `*[_id == "siteSettings"][0]{
   youtubeUrl,
   email,
   introVideoUrl,
+  "introVideoFileUrl": introVideoFile.asset->url,
+  "introVideoPoster": introVideoPoster${image},
   "heroPhoto": heroPhoto${image},
   "aboutPhoto": select(defined(aboutPhoto.asset) => aboutPhoto${image}, heroPhoto${image})
 }`;

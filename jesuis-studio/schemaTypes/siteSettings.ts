@@ -71,6 +71,25 @@ export default defineType({
       type: 'url',
       group: 'media',
     }),
+
+    defineField({
+      name: 'introVideoFile',
+      title: 'Видео-знакомство: файл (необязательно)',
+      type: 'file',
+      group: 'media',
+      options: {accept: 'video/mp4,video/webm'},
+      description:
+        'Если файл загружен, на сайте показывается он в собственном плеере, а ссылка выше не используется. Только MP4, лучше до 50 МБ.',
+    }),
+
+    defineField({
+      name: 'introVideoPoster',
+      title: 'Заставка видео-файла',
+      type: 'image',
+      group: 'media',
+      hidden: ({document}) => !(document as any)?.introVideoFile?.asset,
+      description: 'Кадр, который виден до нажатия Play. Обычно первый кадр видео.',
+    }),
   ],
 
   preview: {

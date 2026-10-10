@@ -19,6 +19,8 @@ export type SiteSettings = {
   youtubeUrl?: string;
   email?: string;
   introVideoUrl?: string;
+  introVideoFileUrl?: string;
+  introVideoPoster?: SanityImage;
   heroPhoto?: SanityImage;
   aboutPhoto?: SanityImage;
 };

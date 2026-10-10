@@ -33,7 +33,11 @@ export default async function HomePage({
       <Idea />
       <ProjectTeaser settings={settings} />
       <ProductsPreview products={products} />
-      <VideoSection url={settings.introVideoUrl} />
+      <VideoSection
+        url={settings.introVideoUrl}
+        fileUrl={settings.introVideoFileUrl}
+        poster={settings.introVideoPoster}
+      />
       <PostsPreview posts={posts} />
       <LeadForm />
       <ContactsSection settings={settings} />
